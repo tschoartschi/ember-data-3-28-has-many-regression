@@ -1,0 +1,9 @@
+{{page-title "Catalog"}}
+<h1>Catalog</h1>
+<p><strong>Name:</strong>{{this.model.name}}</p>
+{{#if this.showLink}}
+  <LinkTo @route="catalog.materials">materials</LinkTo>
+{{else}}
+  Waiting for materials
+{{/if}}
+{{outlet}}
